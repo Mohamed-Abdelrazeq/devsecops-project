@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+    agent any
 
 //   environment {
 //     deploymentName = "devsecops"
@@ -10,14 +10,11 @@ pipeline {
 //     applicationURI="/increment/99"
 //   }
 
-  stages {
-
-    stage('Test - Echo') {
-      steps {
-        sh 'echo "hello world"'
-      }
+    stages {
+        stage('Test - Echo') {
+            steps {
+                sh 'echo "hello world"'
+            }
+        }
     }
-
-    }
-
 }
